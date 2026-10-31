@@ -207,7 +207,25 @@
         <p>تم إعداد هذه المبادرة لدعم التحول الرقمي ونشر المعرفة بين طالباتنا</p>
         <div>أمينة المصادر: <span class="admin-name">شريفة علي</span></div> 
              <div>مديرة المدرسة : <span class="admin-name">بدرية عبدالله</span></div>
-              
+             <!-- قسم عداد الزوار البرمجي المضمون -->
+    <div style="margin-top: 15px; text-align: center;">
+        <p style="font-size: 14px; margin-bottom: 5px;">عدد زوار المكتبة:</p>
+        <span id="visitor-count" style="font-weight: bold; background-color: #ffffff; color: #1e3a8a; padding: 5px 15px; border-radius: 5px; font-size: 18px; display: inline-block;">1</span>
+    </div>
+
+    <!-- كود التشغيل الذكي للعداد -->
+    <script>
+        // التحقق من وجود قيمة سابقة في ذاكرة المتصفح
+        if (localStorage.getItem("library_visitors")) {
+            // إذا وجدت، يتم زيادة العدد بمقدار 1
+            let count = parseInt(localStorage.getItem("library_visitors")) + 1;
+            localStorage.setItem("library_visitors", count);
+            document.getElementById("visitor-count").innerText = count;
+        } else {
+            // إذا كانت أول زيارة، يبدأ العداد من 1
+            localStorage.setItem("library_visitors", "1");
+            document.getElementById("visitor-count").innerText = "1";
+ 
     </footer>
 
 </body>

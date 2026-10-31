@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مبادرة المكتبة الرقمية - مدرسة فاطمة بنت اليمان</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #16a085;
+            --bg: #f8f9fa;
+            --text: #333;
+            --card-bg: #ffffff;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding-bottom: 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 2.3rem;
+            margin-bottom: 12px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .category-section {
+            margin-bottom: 40px;
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-right: 6px solid var(--secondary);
+        }
+
+        .category-title {
+            color: var(--primary);
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .books-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .book-link {
+            display: flex;
+            align-items: center;
+            padding: 15px 20px;
+            background-color: var(--bg);
+            color: var(--primary);
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 1px solid #e0e0e0;
+        }
+
+        .book-link:hover {
+            background-color: var(--secondary);
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 10px rgba(22, 160, 133, 0.2);
+            border-color: var(--secondary);
+        }
+
+        .book-icon {
+            margin-left: 15px;
+            font-size: 1.3rem;
+        }
+
+        footer {
+            background-color: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 25px 20px;
+            margin-top: 60px;
+            border-top: 4px solid var(--secondary);
+            font-size: 1.1rem;
+        }
+
+        footer .admin-name {
+            font-weight: bold;
+            color: #16a085;
+            background: #fff;
+            padding: 4px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 8px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 { font-size: 1.8rem; }
+            .books-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>مبادرة المكتبة الرقمية لمدرسة فاطمة بنت اليمان</h1>
+        <p>بوابتكِ الذكية نحو العلم والمعرفة - اقرئي وتعلّمي في أي وقت ومكان</p>
+    </header>
+
+    <div class="container">
+
+        <!-- 1. قسم المصحف الرقمي وقصص الأنبياء -->
+        <div class="category-section">
+            <h2 class="category-title">📖 المصحف الرقمي وقصص الأنبياء الميسرة</h2>
+            <div class="books-grid">
+                <a href="https://quran.Ksu.edu.sa" target="_blank" class="book-link">
+                    <span class="book-icon">🟢</span> مصحف مجمع الملك فهد الرقمي المباشر
+                </a>
+                <a href="https://shamela.ws/book/23833 "_blank" class="book-link">
+                    <span class="book-icon">📚</span> السيرة النبوية لابن هشام 
+                </a>
+            </div>
+        </div>
+
+        <!-- 2. قسم تاريخ المملكة العربية السعودية -->
+        <div class="category-section">
+            <h2 class="category-title">🌴 قسم تاريخ المملكة العربية السعودية</h2>
+            <div class="books-grid">
+                <a href=" https://www.youtube.com/user/AddarahTube" target="_blank" class="book-link">
+                    <span class="book-icon">🎥</span> المقاطع المرئية الرسمية لتاريخ المملكة (دارة الملك عبدالعزيز)
+                </a>
+                <a href=" https://www.mu.edu.sa/sites/default/files/content/2018/02/saudia-min.pdf " target="_blank" class="book-link">
+                    <span class="book-icon">📜</span> كتاب موجز تاريخ الدولة السعودية
+                </a>
+            </div>
+        </div>
+
+        <!-- 3. قسم الإنجازات والجوائز العالمية لطالبة المملكة -->
+        <div class="category-section">
+            <h2 class="category-title">🏆 جوائز عالمية لإنجازات طلاب وطالبات المملكة</h2>
+            <div class="books-grid">
+                <a href=" https://www.moe.gov.sa/ar/knowledgecenter/projectsinitiatives/pages/completedprojects.aspx" target="_blank" class="book-link">
+                    <span class="book-icon">🥇</span> الموقع الرسمي لاإنجازات وجوائز التعليم (وزارة التعليم)
+                </a>
+                <a href=https://www.mawhiba.sa/excellence-and-leadership/gifted-competing-globally-1/isef/ " target="_blank" class="book-link">
+                    <span class="book-icon">✨</span> معرض اسيف الدولي (آيسف)
+                </a>
+            </div>
+        </div>
+
+        <!-- 4. قسم معاجم اللغة العربية -->
+        <div class="category-section">
+            <h2 class="category-title">🔍 قسم معاجم وقواميس اللغة العربية</h2>
+            <div class="books-grid">
+                <a href="https://shamela.ws/book/8558/36  " target="_blank" class="book-link">
+                    <span class="book-icon">📖</span> معجم الفاظ القران الكريم 
+                </a>
+                <a href="https://app.turath.io/book/11235?page=40 " target="_blank" class="book-link">
+                    <span class="book-icon">🗣️</span> كتاب فقه اللغة وأسرار العربية
+                </a>
+            </div>
+        </div>
+
+        <!-- 5. قسم تقنية المعلومات والحاسب الآلي -->
+        <div class="category-section">
+            <h2 class="category-title">💻 قسم علوم الحاسب الآلي والتقنية</h2>
+            <div class="books-grid">
+                <a href="https://files.satr.codes/public/publications/02b03a7f-a475-42ea-8041-3eede10cab87.pdf " target="_blank" class="book-link">
+                    <span class="book-icon">⚙️</span> المبرمج في عصر الذكاء الاصطناعي
+                </a>
+                <a href="https://books.cyberpedia.site/book/advanced-computer-networks-guide " target="_blank" class="book-link">
+                    <span class="book-icon">🛡️</span> كتاب الدليل المتقدم لشبكات الحاسب في مجال الامن السيبراني 
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>تم إعداد هذه المبادرة لدعم التحول الرقمي ونشر المعرفة بين طالباتنا</p>
+        <div>أمينة المصادر: <span class="admin-name">شريفة علي</span></div> 
+             <div>مديرة المدرسة : <span class="admin-name">بدرية عبدالله</span></div>
+              
+    </footer>
+
+</body>
